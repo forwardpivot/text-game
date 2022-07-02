@@ -1,6 +1,6 @@
 const destination = document.querySelector('#destination');
 const areaSubmit = document.querySelector('#areaSubmit');
-const area = document.querySelector(".area");
+const area = document.querySelector('.area');
 const box1 = document.querySelector('.box1');
 const box2 = document.querySelector('.box2');
 const box3 = document.querySelector('.box3');
@@ -24,4 +24,5 @@ function changeArea (e) {
             console.log(destination.value);
             break;
     }
+    destination.value = null;
 }
