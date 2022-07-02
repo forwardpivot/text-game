@@ -10,8 +10,6 @@ areaSubmit.addEventListener('click', changeArea);
 
 function changeArea (e) {
     area.style.backgroundColor = "white";
-    // box2.style.backgroundColor = "white";
-    // box3.style.backgroundColor = "white";
     switch(destination.value) {
         case 'box1': 
         box1.style.backgroundColor = "green";
