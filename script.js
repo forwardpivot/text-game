@@ -8,20 +8,20 @@ areaSubmit.addEventListener('click', changeArea);
 
 
 function changeArea (e) {
+    box1.style.backgroundColor = "white";
+    box2.style.backgroundColor = "white";
+    box3.style.backgroundColor = "white";
     switch(destination.value) {
         case 'box1': 
-        box1.style.border = "1px solid green";
-        box1.style.backgroundColor = "grey";
+        box1.style.backgroundColor = "green";
         console.log(destination.value);
         break;
         case 'box2':
-            box2.style.border = "1px solid green";
-            box2.style.backgroundColor = "grey";
+            box2.style.backgroundColor = "green";
             console.log(destination.value);
             break;
         case 'box3':
-            box3.style.border = "1px solid green";
-            box3.style.backgroundColor = "grey";
+            box3.style.backgroundColor = "green";
             console.log(destination.value);
             break;
     }
