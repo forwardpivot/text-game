@@ -31,13 +31,16 @@ function changeArea (e) {
     destination.value = null;
 }
 
-    const Place = (name, description,) => {
-        const mapTile = document.createElement('div');
-        mapTile.classList.add("area", `${name}`);
-        map.appendChild(mapTile);
+    const MapTile = (name, description,) => {
+        const mapTile = name
         const lookAround = () => console.log(`${description}`);
         return {name, description, lookAround};
     }
 
-    const box4 = Place("Box4", "Its a box");
+    const box4 = MapTile("Box4", "Its a box");
     box4.lookAround();
+    const box1Look = MapTile(box1, "this is the first box");
+    box1Look.lookAround();
+
+    const box2Obj = MapTile(box2,"This is another box beneath box1");
+    box2Obj.lookAround();
