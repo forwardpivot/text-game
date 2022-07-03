@@ -1,6 +1,7 @@
 const destination = document.querySelector('#destination');
 const areaSubmit = document.querySelector('#areaSubmit');
 const map = document.querySelector(".map");
+const storyBoard = document.querySelector('#storyBoard');
 let area = document.querySelectorAll('.area');
 const box1 = document.querySelector('.box1');
 const box2 = document.querySelector('.box2');
@@ -33,14 +34,14 @@ function changeArea (e) {
 
     const MapTile = (name, description,) => {
         const mapTile = name
-        const lookAround = () => console.log(`${description}`);
-        return {name, description, lookAround};
+        const lookAround = () => storyBoard.textContent = description;
+        const changeBorder = () => name.style.border = "5px solid green";
+        return {name, description, lookAround, changeBorder};
     }
 
-    const box4 = MapTile("Box4", "Its a box");
-    box4.lookAround();
     const box1Look = MapTile(box1, "this is the first box");
     box1Look.lookAround();
 
     const box2Obj = MapTile(box2,"This is another box beneath box1");
     box2Obj.lookAround();
+    box2Obj.changeBorder();
