@@ -40,3 +40,4 @@ function changeArea (e) {
     }
 
     const box4 = Place("Box4", "Its a box");
+    box4.lookAround();
