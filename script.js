@@ -44,4 +44,3 @@ function changeArea (e) {
 
     const box2Obj = MapTile(box2,"This is another box beneath box1");
     box2Obj.lookAround();
-    box2Obj.changeBorder();
