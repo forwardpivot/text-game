@@ -3,25 +3,18 @@
     padding: 0;
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 .map {
-    display: flex;
-    flex-wrap: wrap;
-    width: 400px;
-    height: 400px;
     border: 1px solid black;
-    margin-top: 5vh;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px;
+    gap: 25px;
 }
 
-.area {
-    width: 100px;
-    height: 100px;
+.map > div {
     border: 1px solid black;
 }
+
 
 .ui {
     display: flex;
