@@ -8,6 +8,8 @@ const box2 = document.querySelector('.box2');
 const box3 = document.querySelector('.box3');
 
 areaSubmit.addEventListener('click', changeArea);
+box1.addEventListener('click', changeArea);
+box2.addEventListener('click', changeArea);
 
 
 function changeArea (e) {
@@ -15,21 +17,7 @@ function changeArea (e) {
         elem.style.backgroundColor = "white";
     });
 
-    switch(destination.value) {
-        case 'box1': 
-        box1.style.backgroundColor = "green";
-        console.log(destination.value);
-        break;
-        case 'box2':
-            box2.style.backgroundColor = "green";
-            console.log(destination.value);
-            break;
-        case 'box3':
-            box3.style.backgroundColor = "green";
-            console.log(destination.value);
-            break;
-    }
-    destination.value = null;
+    e.target.style.backgroundColor = "green";
 }
 
     const MapTile = (name, description,) => {
