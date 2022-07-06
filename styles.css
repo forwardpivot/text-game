@@ -5,17 +5,37 @@
 
 .map {
     border: 1px solid black;
-    display: grid;
+    display: inline-grid;
+    background: grey;
     grid-template-columns: 100px 100px 100px;
     grid-template-rows: 100px 100px;
-    gap: 25px;
+    grid-auto-rows: 100px;
+    gap: 20px;
 }
 
 .map > div {
     border: 1px solid black;
+    background: lightgrey;
 }
 
+.box1 {
+    grid-column: 1 / 4;
+    grid-row: 3;
+}
 
+.box2 {
+    grid-column: 1;
+}
+
+.box3 {
+    grid-column: 3;
+}
+
+.box4 {
+    grid-column: 1 / 4 ;
+    grid-row: 1;
+}
+ 
 .ui {
     display: flex;
     justify-content: center;  

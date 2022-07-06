@@ -19,7 +19,7 @@ box4.addEventListener('click', changeArea);
 function changeArea (e) {
     let area = document.querySelectorAll('.area');
     area.forEach(function(elem) {
-        elem.style.backgroundColor = "white";
+        elem.style.backgroundColor = "lightgrey";
     });
 
     e.target.style.backgroundColor = "green";
